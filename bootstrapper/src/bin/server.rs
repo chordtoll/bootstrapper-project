@@ -75,7 +75,7 @@ fn store_dep(dep: &(String, String), contents: &[u8]) {
 fn main() {
     println!("Loading recipes...");
     let mut recipes = BTreeMap::new();
-    for entry in glob::glob("recipes/**/*.yaml").unwrap() {
+    for entry in glob::glob("recipes/*/**/*.yaml").unwrap() {
         let entry = entry.unwrap();
         let name = entry
             .parent()

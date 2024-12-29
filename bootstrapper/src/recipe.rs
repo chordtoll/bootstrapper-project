@@ -18,7 +18,7 @@ lazy_static! {
 
 pub fn load_sources() -> BTreeMap<String, SourceContents> {
     serde_yaml::from_reader::<File, BTreeMap<String, SourceContents>>(
-        File::open("sources.yaml").unwrap(),
+        File::open("recipes/sources.yaml").unwrap(),
     )
     .unwrap()
 }
