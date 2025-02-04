@@ -1,0 +1,9 @@
+[submodule "recipes"]
+	path = recipes
+	url = git@github.com:chordtoll/bootstrapper-recipes.git
+[submodule "tar-rs-reproducible"]
+	path = tar-rs-reproducible
+	url = git@github.com:chordtoll/tar-rs-reproducible.git
+[submodule "bootstrapper"]
+	path = bootstrapper
+	url = git@github.com:chordtoll/bootstrapper-builder.git
